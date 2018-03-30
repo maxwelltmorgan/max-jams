@@ -72,11 +72,10 @@ body {
   }
 }
 
-.clearfix::before, .clearfix::after {
-  content: " ";
-  display: table;
-}
-
 .clearfix::after {
-  clear: both;
-}
+     content: ".";
+     visibility: hidden;
+     display: block;
+     height: 0;
+     clear: both;
+  }
